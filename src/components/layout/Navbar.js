@@ -48,7 +48,7 @@ export default function Navbar() {
 
   return (
     <div className={classes.root}>
-      <AppBar position="sticky" elevation="2" className={classes.bar}>
+      <AppBar position="sticky" elevation={0} className={classes.bar}>
         <Toolbar>
           <IconButton
             edge="start"
@@ -62,7 +62,7 @@ export default function Navbar() {
           </Typography>
           {auth && (
             <div>
-              <IconButton
+              <div
                 aria-label="account of current user"
                 aria-controls="menu-appbar"
                 aria-haspopup="true"
@@ -71,7 +71,7 @@ export default function Navbar() {
                 className={classes.rightButton}
               >
                 <NavButton displayValue="Login" />
-              </IconButton>
+              </div>
               <Menu
                 id="menu-appbar"
                 anchorEl={anchorEl}

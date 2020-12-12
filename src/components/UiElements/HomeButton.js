@@ -6,10 +6,10 @@ const useStyles = makeStyles((theme) => ({
     flexGrow: 1,
   },
   margin: {
-    margin: theme.spacing(1),
+    // margin: theme.spacing(1),
     width: "100px",
     height: "40px",
-    backgroundColor: theme.palette.secondary.main,
+    backgroundColor: theme.palette.primary.highlight,
     textTransform: "none",
     "&:hover": {
       backgroundColor: theme.palette.secondary.dark,
@@ -17,7 +17,7 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-export default function NavButton(props) {
+export default function HomeButton(props) {
   const classes = useStyles();
 
   return (
