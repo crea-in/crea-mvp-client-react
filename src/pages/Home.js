@@ -2,10 +2,11 @@ import React from "react";
 import Navbar from "../components/layout/Navbar";
 import CreatorImg from "../components/layout/CreatorImg";
 import CreatorSummary from "../components/layout/CreatorSummary";
-import HomeTabs from "../components/UiElements/HomeTabs";
-import LottieAnimation from "../components/UiElements/LottieAnimation";
+import HomeTabs from "../components/layout/HomeTabs";
+// import LottieAnimation from "../components/UiElements/LottieAnimation";
 import { makeStyles } from "@material-ui/core/styles";
 import Grid from "@material-ui/core/Grid";
+import { Typography } from "@material-ui/core";
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -24,7 +25,7 @@ function Home() {
       <div className={classes.root}>
         <Navbar />
         <div>
-          <Grid container xs={12}>
+          <Grid container style={{marginTop: "50px"}}>
             <Grid item xs={6}>
               <CreatorImg />
             </Grid>
@@ -35,7 +36,7 @@ function Home() {
               <HomeTabs />
             </Grid>
             <Grid item xs={12}>
-              <LottieAnimation />
+              <div style={{marginTop: "70px"}}><Typography>Created by Souptik Saha</Typography></div>
             </Grid>
           </Grid>
         </div>

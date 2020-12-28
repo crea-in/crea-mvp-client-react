@@ -16,13 +16,13 @@ export default function LottieAnimation() {
 
   return (
     <div>
-      <Lottie options={defaultOptions} height={500} width={500} />
+      <Lottie options={defaultOptions} height={300} width={300} />
       <Typography
         style={{
           color: "#fff",
           textAlign: "center",
-          fontSize: "24px",
-          marginTop: "-50px",
+          fontSize: "18px",
+          marginTop: "-40px",
         }}
       >
         {"Lettuce chill, new streams coming soon!!"}

@@ -47,6 +47,9 @@ const useStyles = makeStyles((theme) => ({
   },
   button: {
     marginTop: "15px",
+    display: "flex",
+    flexWrap: "wrap",
+    maxWidth: "400px",
   }
 }));
 
@@ -75,6 +78,7 @@ export default function CreatorSummary() {
           </div>
           <div className={classes.button}>
             <HomeButton displayValue={"+ Follow"} />
+            <HomeButton displayValue={"$ Subscribe"} />
           </div>
         </Paper>
       </div>

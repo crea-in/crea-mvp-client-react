@@ -3,14 +3,15 @@ import Button from "@material-ui/core/Button";
 
 const useStyles = makeStyles((theme) => ({
   root: {
-    flexGrow: 1,
+    flexGrow: 0,
   },
   margin: {
-    // margin: theme.spacing(1),
-    width: "100px",
-    height: "40px",
+    marginRight: theme.spacing(2),
+    minWidth: "100px",
+    minHeight: "40px",
     backgroundColor: theme.palette.primary.highlight,
     textTransform: "none",
+    borderRadius: "50px",
     "&:hover": {
       backgroundColor: theme.palette.secondary.dark,
     },

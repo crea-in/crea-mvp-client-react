@@ -11,6 +11,7 @@ const useStyles = makeStyles((theme) => ({
     height: "40px",
     backgroundColor: theme.palette.secondary.main,
     textTransform: "none",
+    borderRadius: "50px",
     "&:hover": {
       backgroundColor: theme.palette.secondary.dark,
     },
