@@ -36,7 +36,7 @@ function Home() {
               <HomeTabs />
             </Grid>
             <Grid item xs={12}>
-              <div style={{marginTop: "70px"}}><Typography>Created by Souptik Saha</Typography></div>
+              <div style={{marginTop: "70px"}}><Typography>{`Created by Souptik Saha`}</Typography></div>
             </Grid>
           </Grid>
         </div>

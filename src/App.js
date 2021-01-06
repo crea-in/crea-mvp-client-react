@@ -1,7 +1,8 @@
 import "./App.css";
 
 // import Navbar from './components/layout/Navbar';
-import Home from "./pages/Home";
+// import Home from "./pages/Home";
+import StreamView from "./pages/StreamView";
 import { withStyles } from "@material-ui/core/styles";
 
 const styles = (theme) => ({
@@ -15,7 +16,8 @@ function App(props) {
   const { classes } = props;
   return (
     <div className={classes.root}>
-      <Home />
+      {/*<Home />*/}
+      <StreamView />
     </div>
   );
 }

@@ -10,7 +10,7 @@ const theme = createMuiTheme({
     },
     secondary: {
       main: "#00B2CA",
-      dark: "",
+      dark: "#163845",
       light: "#0090a9",
     },
   },
@@ -19,6 +19,14 @@ const theme = createMuiTheme({
       contained: {
         borderRadius: "5",
         fontSize: "14px",
+      },
+    },
+    MuiInput: {
+      input: {
+        "&::placeholder": {
+          color: "white",
+        },
+        // color: "white", // if you also want to change the color of the input, this is the prop you'd use
       },
     },
   },
