@@ -10,6 +10,12 @@ const useStyles = makeStyles((theme) => ({
   root: {
     flexGrow: 1,
   },
+  chat: {
+    borderLeft: "100%",
+    borderLeftColor: "#363636",
+    borderStyle: "none none none solid",
+    borderLeftWidth: "1px",
+  },
 }));
 
 function StreamView() {
@@ -24,7 +30,7 @@ function StreamView() {
           </div>
         </Grid>
         <Grid item xs={3}>
-          <div>
+          <div className={classes.chat}>
             <SuperChat />
           </div>
         </Grid>

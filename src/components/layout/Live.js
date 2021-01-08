@@ -59,7 +59,7 @@ const useStyles = makeStyles((theme) => ({
     fontSize: "2.25rem",
     fontWeight: 700,
     color: "white",
-    paddingRight: "540px",
+    paddingRight: "35vw",
   },
   viewcount: {
     flexGrow: 1,
@@ -73,11 +73,11 @@ const useStyles = makeStyles((theme) => ({
     backgroundColor: "white",
     color: "black",
   },
-  streamcreator:{
-      color: "#A09E9E",
-      fontSize: "18px",
-      marginLeft: theme.spacing(5),
-  }
+  streamcreator: {
+    color: "#A09E9E",
+    fontSize: "18px",
+    marginLeft: theme.spacing(5),
+  },
 }));
 
 function Live() {
@@ -116,8 +116,8 @@ function Live() {
         <Typography style={{ color: "white" }}>{videoData[0].time}</Typography>
       </div>
       <Typography className={classes.streamcreator}>
-            By {videoData[0].creator}
-          </Typography>
+        By {videoData[0].creator}
+      </Typography>
     </div>
   );
 }

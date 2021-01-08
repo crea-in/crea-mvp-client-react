@@ -14,10 +14,6 @@ import SendIcon from "@material-ui/icons/Send";
 const useStyles = makeStyles((theme) => ({
   root: {
     flexGrow: 1,
-    // height: "100vh",
-    // flexDirection: "column",
-    // borderLeftWidth: "2px",
-    // borderLeftColor: "grey",
   },
   bar: {
     backgroundColor: theme.palette.secondary.dark,
@@ -34,32 +30,32 @@ const useStyles = makeStyles((theme) => ({
     display: "flex",
   },
   chatview: {
-    maxHeight: "80vh",
+    height: "82vh",
     overflowY: "scroll",
     display: "flex",
-    flexDirection: "column",
+    flexDirection: "column-reverse",
 
     '&::-webkit-scrollbar': {
-      width: '2.5em',
+      width: '5px',
     },
     '&::-webkit-scrollbar-track': {
-      backgroundColor: "grey",
+      backgroundColor: "#363636",
     },
     '&::-webkit-scrollbar-thumb': {
-      backgroundColor: "white",
+      backgroundColor: "grey",
     },
   },
 
   frm:{
     flexGrow: 1,
     height: "70px",
-    minWidth: "383px",
-    // width: "100%",
+    // minWidth: "383px",
+    width: "100%",
     display: "flex",
     justifyContent: "center",
     alignItems: "center",
     backgroundColor: theme.palette.secondary.dark,
-    position: "fixed",
+    // position: "fixed",
     // marginTop: "25px",
     bottom: 0,
   },
@@ -67,7 +63,7 @@ const useStyles = makeStyles((theme) => ({
     padding: "2px 4px",
     display: "flex",
     alignItems: "center",
-    width: 330,
+    width: "21.5vw",
     borderRadius: 50,
     backgroundColor: theme.palette.primary.main,
   },
