@@ -77,6 +77,10 @@ const useStyles = makeStyles((theme) => ({
     color: "#A09E9E",
     fontSize: "18px",
     marginLeft: theme.spacing(5),
+    "&:hover": {
+      "text-decoration": "underline",
+      cursor: "pointer",
+    },
   },
 }));
 
