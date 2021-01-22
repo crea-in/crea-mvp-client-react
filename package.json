@@ -45,6 +45,5 @@
       "last 1 safari version"
     ]
   },
-  "homepage": ".",
-  "proxy": "https://mad.eygert.com/api/v1"
+  "homepage": "."
 }
