@@ -109,17 +109,9 @@ function HostNav() {
                     <HostNavButton displayValue={"Edit Page"} />
                   </div>
                   <Dialog open={open} onClose={handleClickClose}>
-                    <EditForm/>
-                    {/*<div
-                      style={{
-                        backgroundColor: "whitesmoke",
-                        height: "500px",
-                        width: "500px",
-                      }}
-                      // onClick={handleClickClose}
-                    >
-                      {"Hello World"}
-                    </div>*/}
+                    <EditForm handleClickOpen={handleClickOpen}
+                    open={open}
+                    handleClose={handleClickClose}/>
                   </Dialog>
                 </div>
                 <div>

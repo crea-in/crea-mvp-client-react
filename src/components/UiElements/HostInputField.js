@@ -15,7 +15,7 @@ const CustomInput = withStyles((theme, props) => ({
   input: {
     borderRadius: 10,
     position: "relative",
-    backgroundColor: "#C4C4C4",
+    backgroundColor: "#E5E5E5",
     border: "1px solid #ced4da",
     fontSize: 16,
     // width: "auto",
@@ -55,6 +55,9 @@ function InputField(props) {
           id={props.id}
           type={props.type}
           placeholder={props.placeholder}
+          defaultValue={props.default}
+          multiline={props.multiLine}
+          rows={props.Rows}
           style={{ minWidth: "30vw" }}
         />
       </FormControl>

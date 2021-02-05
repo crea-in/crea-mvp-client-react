@@ -47,12 +47,28 @@ const useStyles = makeStyles((theme) => ({
     marginTop: theme.spacing(7),
     display: "flex",
     flexDirection: "column",
-    justifyContent: "space-between",
+    justifyContent: "center",
+    alignContent: "space-between",
     alignItems: "center",
+    height: "63vh",
+  },
+  uploadbutton: {
+    backgroundColor: "#E5E5E5",
+    textTransform: "none",
+    padding: "8px 24px",
+    color: "grey",
+    fontWeight: 400,
+    fontSize: "14px",
+    borderRadius: "10px",
+    marginTop: "5px",
+  },
+  upload: {
+    margin: theme.spacing(1),
+    marginRight: "auto",
   },
 }));
 
-export default function EditForm() {
+export default function EditForm(props) {
   const classes = useStyles();
   return (
     <div className={classes.root}>
@@ -68,8 +84,12 @@ export default function EditForm() {
             >
               {"Edit page"}
             </Typography>
-            <Button className={classes.b2}>Cancel</Button>
-            <Button className={classes.b1}>Save</Button>
+            <Button onClick={props.handleClose} className={classes.b2}>
+              Cancel
+            </Button>
+            <Button onClick={props.handleClose} className={classes.b1}>
+              Save
+            </Button>
           </div>
           <form className={classes.edit} autoComplete="off">
             <InputField
@@ -84,6 +104,26 @@ export default function EditForm() {
               id={"description"}
               placeholder={"Giving tips and tricks on UI/UX Designing"}
               style={{ paddingTop: "3px" }}
+            />
+            <div className={classes.upload}>
+              <Typography
+                style={{
+                  fontSize: "13px",
+                  color: "#0B161A",
+                  fontWeight: "500",
+                }}
+              >
+                {"Add Profile Image"}
+              </Typography>
+              <Button className={classes.uploadbutton}>Upload Image</Button>
+            </div>
+            <InputField
+              id={"about"}
+              label={"About Me"}
+              placeholder={"Tell something about yourself"}
+              multiLine={"multiline"}
+              Rows={4}
+              default={"Hey 👋 I just created a page here"}
             />
           </form>
         </div>

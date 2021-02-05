@@ -3,6 +3,7 @@ import React, {useState} from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import Grid from "@material-ui/core/Grid";
 import Paper from "@material-ui/core/Paper";
+import { Typography } from "@material-ui/core";
 
 import SubscribeCard from "../UiElements/SubscribeCard";
 
@@ -40,7 +41,7 @@ function TabContents() {
     <div className={classes.root}>
       <Grid container spacing={3} style={{marginLeft: "90px", marginRight: "90px"}}>
         <Grid item xs={8}>
-          <Paper className={classes.paper}>{summary}</Paper>
+          <Paper className={classes.paper}><Typography style={{fontSize: "18px"}}>{summary}</Typography></Paper>
         </Grid>
         <Grid item xs={4}>
           <SubscribeCard className={classes.paper}/>

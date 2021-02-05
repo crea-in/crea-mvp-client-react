@@ -2,11 +2,12 @@ import React from "react";
 
 import Grid from "@material-ui/core/Grid";
 import { makeStyles } from "@material-ui/core/styles";
+import { Typography } from "@material-ui/core";
 
 import HostNav from "../components/layout/host/HostNav";
 import EditSummary from "../components/layout/host/EditSummary";
-// import CreatorSummary from "../components/layout/CreatorSummary";
 import CreatorImg from "../components/layout/CreatorImg";
+import HomeTabs from "../components/layout/HomeTabs";
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -30,8 +31,13 @@ function HostHome() {
           </Grid>
           <Grid item xs={6}>
             <EditSummary />
-            {/*<CreatorSummary />*/}
           </Grid>
+          <Grid item xs={12} style={{ marginTop: "50px" }}>
+              <HomeTabs />
+            </Grid>
+            <Grid item xs={12}>
+              <div style={{marginTop: "70px"}}><Typography>{`Created by Souptik Saha`}</Typography></div>
+            </Grid>
         </Grid>
       </div>
     </div>

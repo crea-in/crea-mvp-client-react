@@ -10,11 +10,13 @@ import HighlightOffRoundedIcon from "@material-ui/icons/HighlightOffRounded";
 
 const useStyles = makeStyles((theme) => ({
   root: {
-    height: "330px",
-    display: "flex",
+    minHeight: "330px",
     flexDirection: "column",
     flexGrow: 1,
     borderRadius: "10px",
+    display: "flex",
+    justifyContent: "center",
+    alignItems: "center",
   },
   title: {
     fontSize: "24px",
@@ -41,8 +43,6 @@ const useStyles = makeStyles((theme) => ({
     fontSize: "16px",
     width: "350px",
     height: "50px",
-    marginLeft: "5%",
-    marginRight: "5%",
     "&:hover": {
       backgroundColor: theme.palette.secondary.dark,
     },
